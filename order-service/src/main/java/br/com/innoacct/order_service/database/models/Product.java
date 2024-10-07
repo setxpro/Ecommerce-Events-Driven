@@ -18,6 +18,7 @@ import java.util.UUID;
 @Builder
 @Document(collection = "products")
 public class Product {
+
     @Id
     private UUID id;
     private String name;

@@ -9,9 +9,9 @@ spring:
 aws:
   region: us-east-1
   sqs:
-    endpoint: https://sqs.us-east-1.amazonaws.com/337328321041/orders-queue
+    endpoint: ${ORDERS_QUEUE}
   sns:
-    processed-orders-topic: arn:aws:sns:us-east-1:337328321041:processed-orders-topic
+    processed-orders-topic: ${PROCESSED_ORDERS_TOPIC}
 
 server:
   port: 8081
